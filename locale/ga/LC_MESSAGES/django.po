@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-14 23:55+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4);\n"
+
+#: case_muhammed/settings.py:123
+msgid "Afrikaans"
+msgstr ""
+
+#: case_muhammed/settings.py:124
+msgid "Arabic"
+msgstr ""
+
+#: case_muhammed/settings.py:125
+msgid "Asturian"
+msgstr ""
+
+#: case_muhammed/settings.py:126
+msgid "Azerbaijani"
+msgstr ""
+
+#: case_muhammed/settings.py:127
+msgid "Bulgarian"
+msgstr ""
+
+#: case_muhammed/settings.py:128
+msgid "Belarusian"
+msgstr ""
+
+#: case_muhammed/settings.py:129
+msgid "Bengali"
+msgstr ""
+
+#: case_muhammed/settings.py:130
+msgid "Breton"
+msgstr ""
+
+#: case_muhammed/settings.py:131
+msgid "Bosnian"
+msgstr ""
+
+#: case_muhammed/settings.py:132
+msgid "Catalan"
+msgstr ""
+
+#: case_muhammed/settings.py:133
+msgid "Czech"
+msgstr ""
+
+#: case_muhammed/settings.py:134
+msgid "Welsh"
+msgstr ""
+
+#: case_muhammed/settings.py:135
+msgid "Danish"
+msgstr ""
+
+#: case_muhammed/settings.py:136
+msgid "German"
+msgstr ""
+
+#: case_muhammed/settings.py:137
+msgid "Lower Sorbian"
+msgstr ""
+
+#: case_muhammed/settings.py:138
+msgid "Greek"
+msgstr ""
+
+#: case_muhammed/settings.py:139
+msgid "English"
+msgstr ""
+
+#: case_muhammed/settings.py:140
+msgid "Australian English"
+msgstr ""
+
+#: case_muhammed/settings.py:141
+msgid "British English"
+msgstr ""
+
+#: case_muhammed/settings.py:142
+msgid "Esperanto"
+msgstr ""
+
+#: case_muhammed/settings.py:143
+msgid "Spanish"
+msgstr ""
+
+#: case_muhammed/settings.py:144
+msgid "Argentinian Spanish"
+msgstr ""
+
+#: case_muhammed/settings.py:145
+msgid "Colombian Spanish"
+msgstr ""
+
+#: case_muhammed/settings.py:146
+msgid "Mexican Spanish"
+msgstr ""
+
+#: case_muhammed/settings.py:147
+msgid "Nicaraguan Spanish"
+msgstr ""
+
+#: case_muhammed/settings.py:148
+msgid "Venezuelan Spanish"
+msgstr ""
+
+#: case_muhammed/settings.py:149
+msgid "Estonian"
+msgstr ""
+
+#: case_muhammed/settings.py:150
+msgid "Basque"
+msgstr ""
+
+#: case_muhammed/settings.py:151
+msgid "Persian"
+msgstr ""
+
+#: case_muhammed/settings.py:152
+msgid "Finnish"
+msgstr ""
+
+#: case_muhammed/settings.py:153
+msgid "French"
+msgstr ""
+
+#: case_muhammed/settings.py:154
+msgid "Frisian"
+msgstr ""
+
+#: case_muhammed/settings.py:155
+msgid "Irish"
+msgstr ""
+
+#: case_muhammed/settings.py:156
+msgid "Scottish Gaelic"
+msgstr ""
+
+#: case_muhammed/settings.py:157
+msgid "Galician"
+msgstr ""
+
+#: case_muhammed/settings.py:158
+msgid "Hebrew"
+msgstr ""
+
+#: case_muhammed/settings.py:159
+msgid "Hindi"
+msgstr ""
+
+#: case_muhammed/settings.py:160
+msgid "Croatian"
+msgstr ""
+
+#: case_muhammed/settings.py:161
+msgid "Upper Sorbian"
+msgstr ""
+
+#: case_muhammed/settings.py:162
+msgid "Hungarian"
+msgstr ""
+
+#: case_muhammed/settings.py:163
+msgid "Interlingua"
+msgstr ""
+
+#: case_muhammed/settings.py:164
+msgid "Indonesian"
+msgstr ""
+
+#: case_muhammed/settings.py:165
+msgid "Ido"
+msgstr ""
+
+#: case_muhammed/settings.py:166
+msgid "Icelandic"
+msgstr ""
+
+#: case_muhammed/settings.py:167
+msgid "Italian"
+msgstr ""
+
+#: case_muhammed/settings.py:168
+msgid "Japanese"
+msgstr ""
+
+#: case_muhammed/settings.py:169
+msgid "Georgian"
+msgstr ""
+
+#: case_muhammed/settings.py:170
+msgid "Kabyle"
+msgstr ""
+
+#: case_muhammed/settings.py:171
+msgid "Kazakh"
+msgstr ""
+
+#: case_muhammed/settings.py:172
+msgid "Khmer"
+msgstr ""
+
+#: case_muhammed/settings.py:173
+msgid "Kannada"
+msgstr ""
+
+#: case_muhammed/settings.py:174
+msgid "Korean"
+msgstr ""
+
+#: case_muhammed/settings.py:175
+msgid "Luxembourgish"
+msgstr ""
+
+#: case_muhammed/settings.py:176
+msgid "Lithuanian"
+msgstr ""
+
+#: case_muhammed/settings.py:177
+msgid "Latvian"
+msgstr ""
+
+#: case_muhammed/settings.py:178
+msgid "Macedonian"
+msgstr ""
+
+#: case_muhammed/settings.py:179
+msgid "Malayalam"
+msgstr ""
+
+#: case_muhammed/settings.py:180
+msgid "Mongolian"
+msgstr ""
+
+#: case_muhammed/settings.py:181
+msgid "Marathi"
+msgstr ""
+
+#: case_muhammed/settings.py:182
+msgid "Burmese"
+msgstr ""
+
+#: case_muhammed/settings.py:183
+msgid "Norwegian Bokmål"
+msgstr ""
+
+#: case_muhammed/settings.py:184
+msgid "Nepali"
+msgstr ""
+
+#: case_muhammed/settings.py:185
+msgid "Dutch"
+msgstr ""
+
+#: case_muhammed/settings.py:186
+msgid "Norwegian Nynorsk"
+msgstr ""
+
+#: case_muhammed/settings.py:187
+msgid "Ossetic"
+msgstr ""
+
+#: case_muhammed/settings.py:188
+msgid "Punjabi"
+msgstr ""
+
+#: case_muhammed/settings.py:189
+msgid "Polish"
+msgstr ""
+
+#: case_muhammed/settings.py:190
+msgid "Portuguese"
+msgstr ""
+
+#: case_muhammed/settings.py:191
+msgid "Brazilian Portuguese"
+msgstr ""
+
+#: case_muhammed/settings.py:192
+msgid "Romanian"
+msgstr ""
+
+#: case_muhammed/settings.py:193
+msgid "Russian"
+msgstr ""
+
+#: case_muhammed/settings.py:194
+msgid "Slovak"
+msgstr ""
+
+#: case_muhammed/settings.py:195
+msgid "Slovenian"
+msgstr ""
+
+#: case_muhammed/settings.py:196
+msgid "Albanian"
+msgstr ""
+
+#: case_muhammed/settings.py:197
+msgid "Serbian"
+msgstr ""
+
+#: case_muhammed/settings.py:198
+msgid "Serbian Latin"
+msgstr ""
+
+#: case_muhammed/settings.py:199
+msgid "Swedish"
+msgstr ""
+
+#: case_muhammed/settings.py:200
+msgid "Swahili"
+msgstr ""
+
+#: case_muhammed/settings.py:201
+msgid "Tamil"
+msgstr ""
+
+#: case_muhammed/settings.py:202
+msgid "Telugu"
+msgstr ""
+
+#: case_muhammed/settings.py:203
+msgid "Thai"
+msgstr ""
+
+#: case_muhammed/settings.py:204
+msgid "Turkish"
+msgstr ""
+
+#: case_muhammed/settings.py:205
+msgid "Tatar"
+msgstr ""
+
+#: case_muhammed/settings.py:206
+msgid "Udmurt"
+msgstr ""
+
+#: case_muhammed/settings.py:207
+msgid "Ukrainian"
+msgstr ""
+
+#: case_muhammed/settings.py:208
+msgid "Urdu"
+msgstr ""
+
+#: case_muhammed/settings.py:209
+msgid "Vietnamese"
+msgstr ""
+
+#: case_muhammed/settings.py:210
+msgid "Simplified Chinese"
+msgstr ""
+
+#: case_muhammed/settings.py:211
+msgid "Traditional Chinese"
+msgstr ""
+
+#: templates/create-form.html:10
+msgid "Description"
+msgstr ""
