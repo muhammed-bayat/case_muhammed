@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<form>
+<form method="post"{% csrf_token %}  
     <div class="form-group">
       <label>Title</label>
       <input type="text" class="form-control" id="title" placeholder="Enter title">
@@ -31,7 +31,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     var formData = new FormData();
-   
+    
       $(document).on('click', '#submit', function(e) {
         formData.append('title', $('#title').val())
         formData.append('description', $('#description').val())
@@ -40,6 +40,7 @@
         formData.append('image',  $('#image')[0].files[0])
         formData.append('action', 'create-form')
         formData.append('csrfmiddlewaretoken', '{{ csrf_token }}')
+
           $.ajax({
               type: 'POST',
               url: '{% url "create-form" %}',
@@ -48,8 +49,10 @@
               processData: false,
               contentType: false,
               enctype: 'multipart/form-data',
+              
               success: function (){
                   alert('The form has been created!')
+            
               },
               error: function(xhr, errmsg, err) {
                   console.log(xhr.status + ":" + xhr.responseText)
@@ -57,4 +60,44 @@
           })
       })
 </script>
+
+<script>
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+const csrftoken = getCookie('csrftoken');
+
+ 
+
+
+</script>
+
+<style>
+    .form-group {
+        margin-bottom: 1rem;
+        color: rgb(255, 255, 255);
+    }
+html,body { 
+background-image: url("https://www.m2c2.media/wp-content/uploads/2021/06/1092758.jpg");
+height: 100%;
+background-repeat: no-repeat;
+ 
+ 
+}
+
+  
+</style>
+
 {% endblock %}
