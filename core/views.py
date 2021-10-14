@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from .models import Post
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+from rest_framework.permissions import IsAuthenticated  # <-- Here
 
 def token_view(request):
     posts = Post.objects.all().order_by('-id')
@@ -22,3 +26,12 @@ def create_form_view(request):
         )
 
     return render(request, 'create-form.html')
+
+
+class HelloView(APIView):
+           # <-- And here
+
+    def get(self, request):
+        content = {'message': 'Hello, World!'} 
+        
+        return Response(content)
