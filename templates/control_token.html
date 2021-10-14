@@ -1,6 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+<script type="text/javascript">
+alert(  "ajax :  {{ csrf_token}}");
+    $(document).ready(function() {
+        $('#control_token').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "ajax": "{{ csrf_token}}",
+            "columns": [
+                { "data": "title" },
+                { "data": "mail" },
+                { "data": "description" },
+                
+            ]
+        });
+    });
+</script>
+
 <div class="row row-cols-1 row-cols-md-2">
     {% for post in posts %}
     <div class="col mb-4">
