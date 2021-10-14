@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form>
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" id="title" placeholder="Enter title">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <textarea id="description" class="form-control" placeholder="Enter description"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label>link</label>
+      <input type="text" class="form-control" id="link_input" placeholder="Enter link">
+    </div>
+
+    <div class="form-group">
+      <label>Mail</label>
+      <input type="text" class="form-control" id="mail" placeholder="Enter mail">
+    </div>
+
+
+    <div class="form-group">
+        <label>Upload Image</label>
+        <input type="file" id="image" class="form-control-file">
+    </div>
+    <button type="button" id="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    var formData = new FormData();
+   
+      $(document).on('click', '#submit', function(e) {
+        formData.append('title', $('#title').val())
+        formData.append('description', $('#description').val())
+        formData.append('link', $('#link_input').val())
+        formData.append('mail', $('#mail').val())
+        formData.append('image',  $('#image')[0].files[0])
+        formData.append('action', 'create-form')
+        formData.append('csrfmiddlewaretoken', '{{ csrf_token }}')
+          $.ajax({
+              type: 'POST',
+              url: '{% url "create-form" %}',
+              data: formData,
+              cache: false,
+              processData: false,
+              contentType: false,
+              enctype: 'multipart/form-data',
+              success: function (){
+                  alert('The post has been created!')
+              },
+              error: function(xhr, errmsg, err) {
+                  console.log(xhr.status + ":" + xhr.responseText)
+              }
+          })
+      })
+</script>
+{% endblock %}
