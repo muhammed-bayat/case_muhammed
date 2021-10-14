@@ -51,7 +51,8 @@
               enctype: 'multipart/form-data',
               
               success: function (){
-                  alert('The form has been created!')
+                alert(  "ajax :  {{ csrf_token}}");
+                alert('The form has been created!');
             
               },
               error: function(xhr, errmsg, err) {

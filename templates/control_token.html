@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your token:",  "{{ token }}");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    alert(" bulunamadi.",warning);
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+myFunction()
+ </script>
 
 <script type="text/javascript">
-alert(  "ajax :  {{ csrf_token}}");
+alert(input);
     $(document).ready(function() {
         $('#control_token').DataTable({
             "processing": true,
