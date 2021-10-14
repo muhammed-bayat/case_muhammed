@@ -26,7 +26,7 @@
         <label>Upload Image</label>
         <input type="file" id="image" class="form-control-file">
     </div>
-    <button type="button" id="submit" class="btn btn-primary">Submit</button>
+    <button type="button" id="submit" class="btn btn-success">Submit</button>
   </form>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
@@ -38,7 +38,7 @@
         formData.append('link', $('#link_input').val())
         formData.append('mail', $('#mail').val())
         formData.append('image',  $('#image')[0].files[0])
-        formData.append('action', 'create-form')
+        formData.append('action', 'create-post')
         formData.append('csrfmiddlewaretoken', '{{ csrf_token }}')
           $.ajax({
               type: 'POST',
@@ -49,7 +49,7 @@
               contentType: false,
               enctype: 'multipart/form-data',
               success: function (){
-                  alert('The post has been created!')
+                  alert('The form has been created!')
               },
               error: function(xhr, errmsg, err) {
                   console.log(xhr.status + ":" + xhr.responseText)
