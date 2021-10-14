@@ -38,7 +38,7 @@
         formData.append('link', $('#link_input').val())
         formData.append('mail', $('#mail').val())
         formData.append('image',  $('#image')[0].files[0])
-        formData.append('action', 'create-post')
+        formData.append('action', 'create-form')
         formData.append('csrfmiddlewaretoken', '{{ csrf_token }}')
           $.ajax({
               type: 'POST',
