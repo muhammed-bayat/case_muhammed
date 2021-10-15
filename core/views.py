@@ -4,9 +4,12 @@ from django.utils.translation import gettext as _
 
 from django.utils.translation import ugettext as _
 from django.utils import translation
+from django.utils.translation import get_language,activate,gettext
+
 
 def token_view(request):
     posts = Post.objects.all().order_by('-id')
+    trans= translate(language='tr')
     return render(request, 'control_token.html', {'posts':posts})
 
 #değer kontrolü için ise
@@ -29,3 +32,14 @@ def create_form_view(request):
         )
 
     return render(request, 'create-form.html')
+
+
+def translate(language):
+    current_language = get_language()
+    try:
+        activate(language)
+        text = gettext('hello')
+    finally:
+        activate(current_language)
+        
+    return text
