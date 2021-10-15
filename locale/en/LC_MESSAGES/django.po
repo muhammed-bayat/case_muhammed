@@ -377,3 +377,7 @@ msgstr ""
 #: templates/create-form.html:10
 msgid "Description"
 msgstr ""
+
+
+msgid "Hello"
+msgstr "Merhaba"

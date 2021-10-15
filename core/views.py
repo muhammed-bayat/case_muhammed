@@ -9,7 +9,7 @@ from django.utils.translation import get_language,activate,gettext
 
 def token_view(request):
     posts = Post.objects.all().order_by('-id')
-    trans= translate(language='tr')
+   
     return render(request, 'control_token.html', {'posts':posts})
 
 #değer kontrolü için ise
@@ -30,8 +30,8 @@ def create_form_view(request):
             mail=mail,
             image=image
         )
-
-    return render(request, 'create-form.html')
+    trans= translate(language='tr')
+    return render(request, 'create-form.html',{'trans':trans})
 
 
 def translate(language):
