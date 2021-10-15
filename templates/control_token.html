@@ -4,8 +4,9 @@
 <script>
 function myFunction() {
   let text;
-  let person = prompt("Please enter your token:",  "{{ token }}");
-  if (person == null || person == "") {
+  let cpToken= "{{ csrf_token }}"
+  let token = prompt("Please enter your token:",  "");
+  if (token == cpToken){
     text = "User cancelled the prompt.";
   } else {
     alert(" bulunamadi.");
